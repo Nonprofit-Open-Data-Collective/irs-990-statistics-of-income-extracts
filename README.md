@@ -25,6 +25,7 @@ Here is an example of how to download and process the ASCII files in R.
 ```r
 
 
+# 2015 Form 990 data
 
 dat1 <- read.csv( "https://www.irs.gov/pub/irs-soi/15eofinextract990.dat.dat", sep=" ", skip=1 )
 
@@ -36,9 +37,13 @@ names( dat1 ) <- dat.names
 
 head( dat1 )
 
+write.csv( dat1, "2015-Form-990-PC-SOI.csv", row.names=F )
 
 
-# 2015 990-EZ
+
+
+
+# 2015 Form 990-EZ data
 
 dat2 <- read.csv( "https://www.irs.gov/pub/irs-soi/15eofinextractEZ.dat", sep=" ", skip=1 )
 
@@ -49,6 +54,9 @@ dat.names <- strsplit( raw.names, " ")[[1]]
 names( dat2 ) <- dat.names
 
 head( dat2 )
+
+write.csv( dat2, "2015-Form-990-EZ-SOI.csv", row.names=F )
+
 
 ```
 
