@@ -4,7 +4,7 @@ R scripts and documentation used to read the IRS Statistics of Income extracts.
 
 
 
-# SOI Tax Stats - Annual Extract of Tax-Exempt Organization Financial Data - 2012-2015
+## SOI Tax Stats - Annual Extract of Tax-Exempt Organization Financial Data - 2012-2015
 
 https://www.irs.gov/uac/soi-tax-stats-annual-extract-of-tax-exempt-organization-financial-data
 
